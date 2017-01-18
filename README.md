@@ -17,4 +17,5 @@ npm install --save babel-preset-react
 
 npm install --save webpack babel-loader
 
+npm install --save express webpack-dev-middleware
 ~~~~
