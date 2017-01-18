@@ -40,4 +40,7 @@ npm install --save webpack babel-loader
 npm install --save express webpack-dev-middleware
 
 npm install --save react react-dom
+---
+npm install --save react@15.4.1 react-dom@15.4.1 three@0.82.1
+npm install --save react-three-renderer
 ~~~~
