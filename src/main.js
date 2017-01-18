@@ -2,6 +2,7 @@ console.log('Hello World!');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Counter from './Counter';
+import BasicScene from './BasicScene';
  
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
