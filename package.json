@@ -1,0 +1,19 @@
+{
+  "name": "hibiscus",
+  "version": "1.0.0",
+  "description": "the view portion of an MVC browser based 3D modeling program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipatch/hibiscus.git"
+  },
+  "author": "Chris Jones",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipatch/hibiscus/issues"
+  },
+  "homepage": "https://github.com/ipatch/hibiscus#readme"
+}
