@@ -6,6 +6,6 @@ import Simple from './components/Simple';
 // import OrbitControls from './OrbitControls';
 
 ReactDOM.render(
-	<Simple />,
+	Simple,
 	document.getElementById("app")
 	);
