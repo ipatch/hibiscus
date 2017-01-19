@@ -2,7 +2,7 @@ import React from 'react';
 import React3 from 'react-three-renderer';
 import * as THREE from 'three';
 import ReactDOM from 'react-dom';
-// import OrbitControls from 'OrbitControls';
+import OrbitControls from '../OrbitControls';
 
 class Simple extends React.Component {
   constructor(props, context) {
@@ -11,6 +11,14 @@ class Simple extends React.Component {
     // construct the position vector here, because if we use 'new' within render,
     // React will think that things have changed when they have not.
     this.cameraPosition = new THREE.Vector3(0, 0, 5);
+
+
+    // added values by chris jones
+    // const camera;
+    // this.camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 1000 );
+
+    // this.controls = new THREE.OrbitControls( camera );
+
 
     this.state = {
       cubeRotation: new THREE.Euler(),
@@ -41,7 +49,7 @@ class Simple extends React.Component {
       width={width}
       height={height}
 
-      // controls = new THREE.OrbitControls( camera );
+      
 
       // onAnimate={this._onAnimate}
     >
