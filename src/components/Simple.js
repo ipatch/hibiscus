@@ -40,7 +40,7 @@ class Simple extends React.Component {
       width={width}
       height={height}
 
-      onAnimate={this._onAnimate}
+      // onAnimate={this._onAnimate}
     >
       <scene>
         <perspectiveCamera
@@ -70,7 +70,7 @@ class Simple extends React.Component {
 }
 
 // default
-ReactDOM.render(<Simple/>, document.body);
+ReactDOM.render(<Simple/>, document.getElementById('app'));
 
 // export default Simple;
 
