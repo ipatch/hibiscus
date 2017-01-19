@@ -49,7 +49,9 @@ class Simple extends React.Component {
       width={width}
       height={height}
 
-      
+      // this.controls = new THREE.OrbitControls( camera );
+
+      // <perspectiveCamera ref={this.setUpControls}/>
 
       // onAnimate={this._onAnimate}
     >
@@ -60,6 +62,7 @@ class Simple extends React.Component {
           aspect={width / height}
           near={0.1}
           far={1000}
+          ref={this.setUpControls}
 
           position={this.cameraPosition}
         />
