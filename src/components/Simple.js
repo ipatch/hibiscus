@@ -12,7 +12,6 @@ class Simple extends React.Component {
     // React will think that things have changed when they have not.
     this.cameraPosition = new THREE.Vector3(0, 0, 5);
 
-
     // added values by chris jones
     // const camera;
     // this.camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 1000 );
@@ -38,7 +37,13 @@ class Simple extends React.Component {
         ),
       });
     };
+    
   }
+  // Did not work in this location
+
+  // setUpControls(cameraRef) {
+  //     new OrbitControls(cameraRef);
+  // }
 
   render() {
     const width = window.innerWidth; // canvas width
@@ -81,6 +86,12 @@ class Simple extends React.Component {
       </scene>
     </React3>);
   }
+
+  // Did not work in this location
+
+  // setUpControls(cameraRef) {
+  //     new OrbitControls(cameraRef);
+  //   }
 }
 
 // default
