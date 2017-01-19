@@ -2,6 +2,7 @@ import React from 'react';
 import React3 from 'react-three-renderer';
 import * as THREE from 'three';
 import ReactDOM from 'react-dom';
+// import OrbitControls from 'OrbitControls';
 
 class Simple extends React.Component {
   constructor(props, context) {
@@ -40,6 +41,8 @@ class Simple extends React.Component {
       width={width}
       height={height}
 
+      // controls = new THREE.OrbitControls( camera );
+
       // onAnimate={this._onAnimate}
     >
       <scene>
@@ -71,7 +74,7 @@ class Simple extends React.Component {
 
 // default
 ReactDOM.render(<Simple/>, document.getElementById('app'));
-
-// export default Simple;
+ 
+export default Simple;
 
 // ReactDOM.render(<Simple/>, document.querySelector('#mount'));
