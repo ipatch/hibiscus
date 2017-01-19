@@ -69,5 +69,9 @@ class Simple extends React.Component {
   }
 }
 
-export default Simple;
+// default
+ReactDOM.render(<Simple/>, document.body);
+
+// export default Simple;
+
 // ReactDOM.render(<Simple/>, document.querySelector('#mount'));
