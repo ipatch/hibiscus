@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import Counter from './Counter';
-import Simple from './components/Simple';
+import Simple from './components/simple';
 // import OrbitControls from './OrbitControls';
 
 ReactDOM.render(

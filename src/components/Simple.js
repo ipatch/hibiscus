@@ -2,7 +2,7 @@ import React from 'react';
 import React3 from 'react-three-renderer';
 import * as THREE from 'three';
 import ReactDOM from 'react-dom';
-import OrbitControls from '../OrbitControls';
+import OrbitControls from '../orbit-controls';
 
 class Simple extends React.Component {
   constructor(props, context) {
