@@ -1,35 +1,32 @@
-var path = require('path');
- 
-var config = {
-  // added the below line
-  devtool: "source-map",
-  // end
+const path = require('path');
+
+module.exports = {
+  entry: './main.js',
   context: path.join(__dirname, 'src'),
-  entry: [
-    './main.js',
-  ],
+
   output: {
     path: path.join(__dirname, 'www'),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
+        loader: 'babel',
         test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: ['babel'],
-      },
-    ],
+        exclude: /node_modules/
+      }
+    ]
   },
-  resolveLoader: {
-    root: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
-  resolve: {
-    root: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
+  devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'www'),
+    // Note: the below line is required for reac-router-dom to work properly
+    historyApiFallback: true
+  }
+  // resolveLoader: {
+  //   root: [path.join(__dirname, 'node_modules')]
+  // },
+  // resolve: {
+  //   root: [path.join(__dirname, 'node_modules')]
+  // }
 };
-module.exports = config;

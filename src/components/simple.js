@@ -1,8 +1,6 @@
 import React from 'react';
 import React3 from 'react-three-renderer';
 import * as THREE from 'three';
-import ReactDOM from 'react-dom';
-import OrbitControls from '../orbit-controls';
 
 class Simple extends React.Component {
   constructor(props, context) {
@@ -18,9 +16,8 @@ class Simple extends React.Component {
 
     // this.controls = new THREE.OrbitControls( camera );
 
-
     this.state = {
-      cubeRotation: new THREE.Euler(),
+      cubeRotation: new THREE.Euler()
     };
 
     this._onAnimate = () => {
@@ -34,10 +31,9 @@ class Simple extends React.Component {
           this.state.cubeRotation.x + 0.1,
           this.state.cubeRotation.y + 0.1,
           0
-        ),
+        )
       });
     };
-    
   }
   // Did not work in this location
 
@@ -49,42 +45,35 @@ class Simple extends React.Component {
     const width = window.innerWidth; // canvas width
     const height = window.innerHeight; // canvas height
 
-    return (<React3
-      mainCamera="camera" // this points to the perspectiveCamera which has the name set to "camera" below
-      width={width}
-      height={height}
+    return (
+      <React3
+        mainCamera="camera" // this points to the perspectiveCamera which has the name set to "camera" below
+        width={width}
+        height={height}
 
-      // this.controls = new THREE.OrbitControls( camera );
+        // this.controls = new THREE.OrbitControls( camera );
 
-      // <perspectiveCamera ref={this.setUpControls}/>
+        // <perspectiveCamera ref={this.setUpControls}/>
 
-      // onAnimate={this._onAnimate}
-    >
-      <scene>
-        <perspectiveCamera
-          name="camera"
-          fov={75}
-          aspect={width / height}
-          near={0.1}
-          far={1000}
-          ref={this.setUpControls}
-
-          position={this.cameraPosition}
-        />
-        <mesh
-          rotation={this.state.cubeRotation}
-        >
-          <boxGeometry
-            width={1}
-            height={1}
-            depth={1}
+        // onAnimate={this._onAnimate}
+      >
+        <scene>
+          <perspectiveCamera
+            name="camera"
+            fov={75}
+            aspect={width / height}
+            near={0.1}
+            far={1000}
+            ref={this.setUpControls}
+            position={this.cameraPosition}
           />
-          <meshBasicMaterial
-            color={0x00ff00}
-          />
-        </mesh>
-      </scene>
-    </React3>);
+          <mesh rotation={this.state.cubeRotation}>
+            <boxGeometry width={1} height={1} depth={1} />
+            <meshBasicMaterial color={0xff0000} />
+          </mesh>
+        </scene>
+      </React3>
+    );
   }
 
   // Did not work in this location
@@ -94,9 +83,4 @@ class Simple extends React.Component {
   //   }
 }
 
-// default
-ReactDOM.render(<Simple/>, document.getElementById('app'));
- 
 export default Simple;
-
-// ReactDOM.render(<Simple/>, document.querySelector('#mount'));
