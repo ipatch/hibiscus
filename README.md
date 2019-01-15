@@ -2,28 +2,33 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Hibiscus_hirtus_Lesser_Mallow_flower_Yeleswaram_EastGodavari.JPG" width="400" />
 
+<a id="objective"></a>
+
 ## Objective
 
-The purpose of this git repo is hopefully be the (V) portion of an MVC app that
-will hopefully someday be a 3D modeling program that works within a web browser.
+The purpose of this git repo is to hopefully scaffold out a primitive 3D gfx app that aims to work inbrowser built around Node.js and friends.
+
+<a id=usage"></a>
 
 ## Usage
 
-Start the development server with this command:
+To start the development server
 
+```shell
+npm run dev
 ```
-npm start
-```
+
+<a id="setup"></a>
 
 ## Setup
 
-```
+```shell
+git clone --depth=1 https://github.com/ipatch/hibiscus.git
 npm install
 ```
 
-## Compile
+<a id="todos"></a>
 
-```
-npm run compile
-```
+## TODOs
 
+- [ ] see if Three.js can be used in conjunction with React v16.7 and Webpack 4.x without any issues.

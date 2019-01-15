@@ -1,0 +1,9 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+// import Simple from './components/simple'
+import Hello from './components/hello'
+
+ReactDOM.render(
+  <Hello/>,
+  document.getElementById('app')
+)
