@@ -1,19 +1,19 @@
 {
   "name": "hibiscus",
-  "version": "1.0.0",
-  "description": "the view portion of an MVC browser based 3D modeling program",
+  "version": "0.0.2",
+  "description": "Scaffolding a 3D gfx browser based app",
+  "private": "true",
   "main": "index.js",
   "scripts": {
     "compile": "webpack",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ipatch/hibiscus.git"
   },
   "author": "Chris Jones",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ipatch/hibiscus/issues"
   },
