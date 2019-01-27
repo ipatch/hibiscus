@@ -8,6 +8,8 @@ class App extends React.Component {
     return (
       <div>
         Hello from <code>App.js</code> 🌺 
+        <br />
+        <br />
         <img src={imgGhAvatar}/>
       </div>
     )
