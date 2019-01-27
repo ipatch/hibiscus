@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-// import Simple from './components/simple'
-import Hello from './components/hello'
+import App from './App'
 
 ReactDOM.render(
-  <Hello/>,
+  <App/>,
   document.getElementById('app')
 )
