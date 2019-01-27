@@ -1,5 +1,6 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
+import './index.css'
 
 class App extends React.Component {
   render() {
